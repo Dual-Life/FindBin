@@ -1,0 +1,6 @@
+Changes
+lib/FindBin.pm
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+t/FindBin.t
