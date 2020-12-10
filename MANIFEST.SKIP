@@ -6,3 +6,4 @@ cpanfile
 ^.git/
 ^MYMETA.*
 ^.gitignore
+^FindBin-
