@@ -9,14 +9,14 @@ WriteMakefile(
     VERSION_FROM => 'lib/FindBin.pm',
     ( $] > 5.011 ) ? () : ( INSTALLDIRS => 'perl' ),    # CPAN sourced versions should now install to site
     PREREQ_PM => {
-        'Exporter' => '0',
-        'Carp' => '0',
-        'Cwd' => '0',
+        'Exporter'       => '0',
+        'Carp'           => '0',
+        'Cwd'            => '0',
         'File::Basename' => '0',
-        'File::Spec' => '0',
+        'File::Spec'     => '0',
     },
     ABSTRACT_FROM => 'lib/FindBin.pm',
-    ( $EUMM_VERSION >= 6.31 ? ( LICENSE       => 'perl' )            : () ),
+    ( $EUMM_VERSION >= 6.31 ? ( LICENSE => 'perl' ) : () ),
     dist       => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     META_MERGE => {
         resources => {
