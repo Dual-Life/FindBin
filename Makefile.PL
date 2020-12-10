@@ -15,7 +15,7 @@ WriteMakefile(
         'File::Basename' => '0',
         'File::Spec' => '0',
     },
-    ( $] >= 5.005           ? ( ABSTRACT_FROM => 'lib/FindBin.pm' ) : () ),
+    ABSTRACT_FROM => 'lib/FindBin.pm',
     ( $EUMM_VERSION >= 6.31 ? ( LICENSE       => 'perl' )            : () ),
     dist       => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     META_MERGE => {
